@@ -1,0 +1,456 @@
+{
+  "timestamp": "2025-07-07 07:50:54",
+  "target_memory_gb": 6.0,
+  "system_info": {
+    "system_total_gb": 15.74881362915039,
+    "system_available_gb": 5.315269470214844,
+    "system_used_gb": 10.433544158935547,
+    "system_percent": 66.2,
+    "process_memory_gb": 1.6425704956054688,
+    "torch_allocated_gb": 0,
+    "torch_cached_gb": 0
+  },
+  "optimal_configurations": {
+    "seq_64": {
+      "optimal_batch_size": 4,
+      "best_throughput": 1177.7526980202636,
+      "sequence_length": 64,
+      "results": {
+        "1": {
+          "batch_size": 1,
+          "inference_time": 0.06405091285705566,
+          "throughput": 999.2051189470276,
+          "memory_used_gb": 0.004711151123046875,
+          "memory_after_gb": 0.7446517944335938,
+          "success": true
+        },
+        "2": {
+          "batch_size": 2,
+          "inference_time": 0.12499094009399414,
+          "throughput": 1024.0742241297091,
+          "memory_used_gb": -0.07457351684570312,
+          "memory_after_gb": 0.6700820922851562,
+          "success": true
+        },
+        "3": {
+          "batch_size": 3,
+          "inference_time": 0.18891096115112305,
+          "throughput": 1016.3518243200606,
+          "memory_used_gb": 0.031711578369140625,
+          "memory_after_gb": 0.7017974853515625,
+          "success": true
+        },
+        "4": {
+          "batch_size": 4,
+          "inference_time": 0.2173631191253662,
+          "throughput": 1177.7526980202636,
+          "memory_used_gb": 0.0521392822265625,
+          "memory_after_gb": 0.7539405822753906,
+          "success": true
+        },
+        "5": {
+          "batch_size": 5,
+          "inference_time": 0.2769148349761963,
+          "throughput": 1155.5899489007418,
+          "memory_used_gb": 0.06668853759765625,
+          "memory_after_gb": 0.8206329345703125,
+          "success": true
+        },
+        "6": {
+          "batch_size": 6,
+          "inference_time": 0.36437010765075684,
+          "throughput": 1053.8734982290537,
+          "memory_used_gb": 0.07245635986328125,
+          "memory_after_gb": 0.8930892944335938,
+          "success": true
+        },
+        "7": {
+          "batch_size": 7,
+          "inference_time": 0.4150712490081787,
+          "throughput": 1079.332767736877,
+          "memory_used_gb": 0.033580780029296875,
+          "memory_after_gb": 0.9266738891601562,
+          "success": true
+        },
+        "8": {
+          "batch_size": 8,
+          "inference_time": 0.483107328414917,
+          "throughput": 1059.8059062359503,
+          "memory_used_gb": 0.09651947021484375,
+          "memory_after_gb": 1.0231971740722656,
+          "success": true
+        }
+      }
+    },
+    "seq_128": {
+      "optimal_batch_size": 1,
+      "best_throughput": 1159.1728640829106,
+      "sequence_length": 128,
+      "results": {
+        "1": {
+          "batch_size": 1,
+          "inference_time": 0.11042356491088867,
+          "throughput": 1159.1728640829106,
+          "memory_used_gb": 0.000732421875,
+          "memory_after_gb": 1.0239334106445312,
+          "success": true
+        },
+        "2": {
+          "batch_size": 2,
+          "inference_time": 0.259427547454834,
+          "throughput": 986.7880358564053,
+          "memory_used_gb": 0.00054168701171875,
+          "memory_after_gb": 1.02447509765625,
+          "success": true
+        },
+        "3": {
+          "batch_size": 3,
+          "inference_time": 0.44565796852111816,
+          "throughput": 861.6473329855957,
+          "memory_used_gb": 0.00267791748046875,
+          "memory_after_gb": 1.0271530151367188,
+          "success": true
+        },
+        "4": {
+          "batch_size": 4,
+          "inference_time": 0.5993325710296631,
+          "throughput": 854.2836227311586,
+          "memory_used_gb": 0.005962371826171875,
+          "memory_after_gb": 1.0331153869628906,
+          "success": true
+        },
+        "5": {
+          "batch_size": 5,
+          "inference_time": 0.7426548004150391,
+          "throughput": 861.7731948172024,
+          "memory_used_gb": 0.06363296508789062,
+          "memory_after_gb": 1.0967559814453125,
+          "success": true
+        },
+        "6": {
+          "batch_size": 6,
+          "inference_time": 0.9326889514923096,
+          "throughput": 823.4256434272048,
+          "memory_used_gb": 3.814697265625e-06,
+          "memory_after_gb": 1.0967674255371094,
+          "success": true
+        },
+        "7": {
+          "batch_size": 7,
+          "inference_time": 1.1247243881225586,
+          "throughput": 796.6396118569494,
+          "memory_used_gb": 0.04793548583984375,
+          "memory_after_gb": 1.1447105407714844,
+          "success": true
+        },
+        "8": {
+          "batch_size": 8,
+          "inference_time": 1.2548725605010986,
+          "throughput": 816.0191179820634,
+          "memory_used_gb": 0.19124603271484375,
+          "memory_after_gb": 1.3359642028808594,
+          "success": true
+        }
+      }
+    },
+    "seq_256": {
+      "optimal_batch_size": 6,
+      "best_throughput": 845.580966651109,
+      "sequence_length": 256,
+      "results": {
+        "1": {
+          "batch_size": 1,
+          "inference_time": 0.33702683448791504,
+          "throughput": 759.5834331381097,
+          "memory_used_gb": -0.19126510620117188,
+          "memory_after_gb": 1.1447029113769531,
+          "success": true
+        },
+        "2": {
+          "batch_size": 2,
+          "inference_time": 0.6661763191223145,
+          "throughput": 768.5652961584684,
+          "memory_used_gb": -7.62939453125e-06,
+          "memory_after_gb": 1.1446952819824219,
+          "success": true
+        },
+        "3": {
+          "batch_size": 3,
+          "inference_time": 0.9167146682739258,
+          "throughput": 837.7743114398514,
+          "memory_used_gb": 0.0,
+          "memory_after_gb": 1.1447029113769531,
+          "success": true
+        },
+        "4": {
+          "batch_size": 4,
+          "inference_time": 1.292768955230713,
+          "throughput": 792.0982290429869,
+          "memory_used_gb": 0.125091552734375,
+          "memory_after_gb": 1.2698020935058594,
+          "success": true
+        },
+        "5": {
+          "batch_size": 5,
+          "inference_time": 1.8894290924072266,
+          "throughput": 677.4533138839396,
+          "memory_used_gb": 0.23965835571289062,
+          "memory_after_gb": 1.5094718933105469,
+          "success": true
+        },
+        "6": {
+          "batch_size": 6,
+          "inference_time": 1.816502571105957,
+          "throughput": 845.580966651109,
+          "memory_used_gb": 7.2479248046875e-05,
+          "memory_after_gb": 1.5095443725585938,
+          "success": true
+        },
+        "7": {
+          "batch_size": 7,
+          "inference_time": 2.131417989730835,
+          "throughput": 840.7548442557256,
+          "memory_used_gb": 0.12144088745117188,
+          "memory_after_gb": 1.6310005187988281,
+          "success": true
+        },
+        "8": {
+          "batch_size": 8,
+          "inference_time": 2.423879861831665,
+          "throughput": 844.9263646476182,
+          "memory_used_gb": 0.011554718017578125,
+          "memory_after_gb": 1.6425704956054688,
+          "success": true
+        }
+      }
+    }
+  },
+  "recommendations": {
+    "system_status": {
+      "total_memory_gb": 15.74881362915039,
+      "available_memory_gb": 5.315269470214844,
+      "recommended_target_gb": 4.252215576171875
+    },
+    "optimization_suggestions": [
+      "Use moderate batch sizes (2-4)",
+      "Enable gradient checkpointing for larger models",
+      "Monitor memory usage during training"
+    ],
+    "optimal_configurations": {
+      "seq_64": {
+        "optimal_batch_size": 4,
+        "best_throughput": 1177.7526980202636,
+        "sequence_length": 64,
+        "results": {
+          "1": {
+            "batch_size": 1,
+            "inference_time": 0.06405091285705566,
+            "throughput": 999.2051189470276,
+            "memory_used_gb": 0.004711151123046875,
+            "memory_after_gb": 0.7446517944335938,
+            "success": true
+          },
+          "2": {
+            "batch_size": 2,
+            "inference_time": 0.12499094009399414,
+            "throughput": 1024.0742241297091,
+            "memory_used_gb": -0.07457351684570312,
+            "memory_after_gb": 0.6700820922851562,
+            "success": true
+          },
+          "3": {
+            "batch_size": 3,
+            "inference_time": 0.18891096115112305,
+            "throughput": 1016.3518243200606,
+            "memory_used_gb": 0.031711578369140625,
+            "memory_after_gb": 0.7017974853515625,
+            "success": true
+          },
+          "4": {
+            "batch_size": 4,
+            "inference_time": 0.2173631191253662,
+            "throughput": 1177.7526980202636,
+            "memory_used_gb": 0.0521392822265625,
+            "memory_after_gb": 0.7539405822753906,
+            "success": true
+          },
+          "5": {
+            "batch_size": 5,
+            "inference_time": 0.2769148349761963,
+            "throughput": 1155.5899489007418,
+            "memory_used_gb": 0.06668853759765625,
+            "memory_after_gb": 0.8206329345703125,
+            "success": true
+          },
+          "6": {
+            "batch_size": 6,
+            "inference_time": 0.36437010765075684,
+            "throughput": 1053.8734982290537,
+            "memory_used_gb": 0.07245635986328125,
+            "memory_after_gb": 0.8930892944335938,
+            "success": true
+          },
+          "7": {
+            "batch_size": 7,
+            "inference_time": 0.4150712490081787,
+            "throughput": 1079.332767736877,
+            "memory_used_gb": 0.033580780029296875,
+            "memory_after_gb": 0.9266738891601562,
+            "success": true
+          },
+          "8": {
+            "batch_size": 8,
+            "inference_time": 0.483107328414917,
+            "throughput": 1059.8059062359503,
+            "memory_used_gb": 0.09651947021484375,
+            "memory_after_gb": 1.0231971740722656,
+            "success": true
+          }
+        }
+      },
+      "seq_128": {
+        "optimal_batch_size": 1,
+        "best_throughput": 1159.1728640829106,
+        "sequence_length": 128,
+        "results": {
+          "1": {
+            "batch_size": 1,
+            "inference_time": 0.11042356491088867,
+            "throughput": 1159.1728640829106,
+            "memory_used_gb": 0.000732421875,
+            "memory_after_gb": 1.0239334106445312,
+            "success": true
+          },
+          "2": {
+            "batch_size": 2,
+            "inference_time": 0.259427547454834,
+            "throughput": 986.7880358564053,
+            "memory_used_gb": 0.00054168701171875,
+            "memory_after_gb": 1.02447509765625,
+            "success": true
+          },
+          "3": {
+            "batch_size": 3,
+            "inference_time": 0.44565796852111816,
+            "throughput": 861.6473329855957,
+            "memory_used_gb": 0.00267791748046875,
+            "memory_after_gb": 1.0271530151367188,
+            "success": true
+          },
+          "4": {
+            "batch_size": 4,
+            "inference_time": 0.5993325710296631,
+            "throughput": 854.2836227311586,
+            "memory_used_gb": 0.005962371826171875,
+            "memory_after_gb": 1.0331153869628906,
+            "success": true
+          },
+          "5": {
+            "batch_size": 5,
+            "inference_time": 0.7426548004150391,
+            "throughput": 861.7731948172024,
+            "memory_used_gb": 0.06363296508789062,
+            "memory_after_gb": 1.0967559814453125,
+            "success": true
+          },
+          "6": {
+            "batch_size": 6,
+            "inference_time": 0.9326889514923096,
+            "throughput": 823.4256434272048,
+            "memory_used_gb": 3.814697265625e-06,
+            "memory_after_gb": 1.0967674255371094,
+            "success": true
+          },
+          "7": {
+            "batch_size": 7,
+            "inference_time": 1.1247243881225586,
+            "throughput": 796.6396118569494,
+            "memory_used_gb": 0.04793548583984375,
+            "memory_after_gb": 1.1447105407714844,
+            "success": true
+          },
+          "8": {
+            "batch_size": 8,
+            "inference_time": 1.2548725605010986,
+            "throughput": 816.0191179820634,
+            "memory_used_gb": 0.19124603271484375,
+            "memory_after_gb": 1.3359642028808594,
+            "success": true
+          }
+        }
+      },
+      "seq_256": {
+        "optimal_batch_size": 6,
+        "best_throughput": 845.580966651109,
+        "sequence_length": 256,
+        "results": {
+          "1": {
+            "batch_size": 1,
+            "inference_time": 0.33702683448791504,
+            "throughput": 759.5834331381097,
+            "memory_used_gb": -0.19126510620117188,
+            "memory_after_gb": 1.1447029113769531,
+            "success": true
+          },
+          "2": {
+            "batch_size": 2,
+            "inference_time": 0.6661763191223145,
+            "throughput": 768.5652961584684,
+            "memory_used_gb": -7.62939453125e-06,
+            "memory_after_gb": 1.1446952819824219,
+            "success": true
+          },
+          "3": {
+            "batch_size": 3,
+            "inference_time": 0.9167146682739258,
+            "throughput": 837.7743114398514,
+            "memory_used_gb": 0.0,
+            "memory_after_gb": 1.1447029113769531,
+            "success": true
+          },
+          "4": {
+            "batch_size": 4,
+            "inference_time": 1.292768955230713,
+            "throughput": 792.0982290429869,
+            "memory_used_gb": 0.125091552734375,
+            "memory_after_gb": 1.2698020935058594,
+            "success": true
+          },
+          "5": {
+            "batch_size": 5,
+            "inference_time": 1.8894290924072266,
+            "throughput": 677.4533138839396,
+            "memory_used_gb": 0.23965835571289062,
+            "memory_after_gb": 1.5094718933105469,
+            "success": true
+          },
+          "6": {
+            "batch_size": 6,
+            "inference_time": 1.816502571105957,
+            "throughput": 845.580966651109,
+            "memory_used_gb": 7.2479248046875e-05,
+            "memory_after_gb": 1.5095443725585938,
+            "success": true
+          },
+          "7": {
+            "batch_size": 7,
+            "inference_time": 2.131417989730835,
+            "throughput": 840.7548442557256,
+            "memory_used_gb": 0.12144088745117188,
+            "memory_after_gb": 1.6310005187988281,
+            "success": true
+          },
+          "8": {
+            "batch_size": 8,
+            "inference_time": 2.423879861831665,
+            "throughput": 844.9263646476182,
+            "memory_used_gb": 0.011554718017578125,
+            "memory_after_gb": 1.6425704956054688,
+            "success": true
+          }
+        }
+      }
+    }
+  },
+  "performance_history": []
+}
