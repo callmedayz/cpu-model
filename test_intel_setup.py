@@ -12,7 +12,7 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 # Check if Intel Extension for PyTorch is available
 try:
-    import intel_extension_for_pytorch as ipex
+    import intel_extension_for_pytorch as ipex # type: ignore
     IPEX_AVAILABLE = True
 except ImportError:
     IPEX_AVAILABLE = False
