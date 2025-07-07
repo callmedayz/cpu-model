@@ -1,0 +1,112 @@
+{
+  "perplexity": 9.781752176654328,
+  "generation_metrics": {
+    "generation_results": [
+      {
+        "prompt": "The future of artificial intelligence",
+        "generated_text": "is in the hands of the next generation of AI scientists, and it's time to do something about it.",
+        "full_text": "The future of artificial intelligence is in the hands of the next generation of AI scientists, and it's time to do something about it.",
+        "generation_time": 1.015918493270874,
+        "tokens_per_second": 49.216546732030515
+      },
+      {
+        "prompt": "In a world where technology",
+        "generated_text": "has given us the tools to control everything from how we eat, to how we sleep, to how we live, we have an opportunity to take back control of our lives. The future is one where we can all be more like ourselves.",
+        "full_text": "In a world where technology has given us the tools to control everything from how we eat, to how we sleep, to how we live, we have an opportunity to take back control of our lives. The future is one where we can all be more like ourselves.",
+        "generation_time": 1.999098777770996,
+        "tokens_per_second": 25.01127035641041
+      },
+      {
+        "prompt": "Scientists have recently discovered",
+        "generated_text": "a new way of creating a natural gas field in the southern part of the globe.\n\nThe discovery is the first to date that a natural gas field in the deep ocean can be created from hydrocarbons, a type of gas that can be",
+        "full_text": "Scientists have recently discovered a new way of creating a natural gas field in the southern part of the globe.\n\nThe discovery is the first to date that a natural gas field in the deep ocean can be created from hydrocarbons, a type of gas that can be",
+        "generation_time": 2.033383369445801,
+        "tokens_per_second": 24.58955883642715
+      },
+      {
+        "prompt": "The most important lesson I learned",
+        "generated_text": "was that we are all human. I mean, you're not supposed to kill people, you're not supposed to hurt them, you're not supposed to do anything that makes you feel good.\n\nI learned that we're all creatures. We",
+        "full_text": "The most important lesson I learned was that we are all human. I mean, you're not supposed to kill people, you're not supposed to hurt them, you're not supposed to do anything that makes you feel good.\n\nI learned that we're all creatures. We",
+        "generation_time": 2.066641092300415,
+        "tokens_per_second": 24.19384777854393
+      },
+      {
+        "prompt": "Climate change is affecting",
+        "generated_text": "the planet and we must take action now to protect it from the threat of climate change,\" said Dr. Michael Mann, chief executive of the American Meteorological Society. \"The climate change is a major threat to human health and well-being. We",
+        "full_text": "Climate change is affecting the planet and we must take action now to protect it from the threat of climate change,\" said Dr. Michael Mann, chief executive of the American Meteorological Society. \"The climate change is a major threat to human health and well-being. We",
+        "generation_time": 1.9999339580535889,
+        "tokens_per_second": 25.000825551590655
+      },
+      {
+        "prompt": "The benefits of renewable energy",
+        "generated_text": ":\n\n\u2022 It's cheaper to build.\n\n\u2022 It reduces the risk of catastrophic climate change.\n\n\u2022 It's more efficient and safer.\n\n\u2022 It's cheaper to run our own power plants.\n\n\u2022 It's",
+        "full_text": "The benefits of renewable energy:\n\n\u2022 It's cheaper to build.\n\n\u2022 It reduces the risk of catastrophic climate change.\n\n\u2022 It's more efficient and safer.\n\n\u2022 It's cheaper to run our own power plants.\n\n\u2022 It's",
+        "generation_time": 1.949998140335083,
+        "tokens_per_second": 25.64105009423656
+      },
+      {
+        "prompt": "Machine learning algorithms can",
+        "generated_text": "help us understand how we use the data and what we're learning.\n\nYou can also try it out for yourself, as it's free.\n\nThe project is here: https://github.com/naboo/learn-the",
+        "full_text": "Machine learning algorithms can help us understand how we use the data and what we're learning.\n\nYou can also try it out for yourself, as it's free.\n\nThe project is here: https://github.com/naboo/learn-the",
+        "generation_time": 1.9665741920471191,
+        "tokens_per_second": 25.424924318747493
+      },
+      {
+        "prompt": "The history of human civilization",
+        "generated_text": ", however, is the history of the development of the human race. As the history of man, the history of the human race, has not been fully developed, and as the history of human civilization has not been fully developed, there is no need",
+        "full_text": "The history of human civilization, however, is the history of the development of the human race. As the history of man, the history of the human race, has not been fully developed, and as the history of human civilization has not been fully developed, there is no need",
+        "generation_time": 1.933605432510376,
+        "tokens_per_second": 25.85842962547205
+      },
+      {
+        "prompt": "Space exploration has revealed",
+        "generated_text": "a new form of life in space.\n\nA group of researchers from the University of New South Wales (UNSW) have discovered that the human brain can be used as a \"computer\" to communicate with one another, and that the human",
+        "full_text": "Space exploration has revealed a new form of life in space.\n\nA group of researchers from the University of New South Wales (UNSW) have discovered that the human brain can be used as a \"computer\" to communicate with one another, and that the human",
+        "generation_time": 1.9663286209106445,
+        "tokens_per_second": 25.428099590415382
+      },
+      {
+        "prompt": "The impact of social media on",
+        "generated_text": "our social media use has been very small and it's not something that we could have predicted.\n\n\"There are so many things we can do to change this and that's what we're doing.\"",
+        "full_text": "The impact of social media on our social media use has been very small and it's not something that we could have predicted.\n\n\"There are so many things we can do to change this and that's what we're doing.\"",
+        "generation_time": 1.6502318382263184,
+        "tokens_per_second": 30.29877308253874
+      }
+    ],
+    "avg_generation_time": 1.8581713914871216,
+    "avg_tokens_per_second": 28.066332596641292,
+    "total_prompts": 10
+  },
+  "performance_metrics": {
+    "seq_len_64": {
+      "avg_time": 0.2513850951194763,
+      "std_time": 0.015324271421438867,
+      "tokens_per_second": 509.17895485874044,
+      "avg_memory_mb": 0.2581640625,
+      "batch_size": 2,
+      "sequence_length": 64
+    },
+    "seq_len_128": {
+      "avg_time": 0.479128794670105,
+      "std_time": 0.018444232478740892,
+      "tokens_per_second": 534.3030993916029,
+      "avg_memory_mb": 1.2563671875,
+      "batch_size": 2,
+      "sequence_length": 128
+    }
+  },
+  "system_info": {
+    "device": "cpu",
+    "model_path": "./demo_training_output/best_model",
+    "max_length": 128,
+    "batch_size": 2,
+    "intel_optimizations": {
+      "mkl_available": true,
+      "ipex_available": false,
+      "num_threads": 4
+    },
+    "system_memory_gb": 15.74881362915039,
+    "evaluation_time": 101.73772740364075
+  },
+  "timestamp": "2025-07-07T08:10:34.396716"
+}
