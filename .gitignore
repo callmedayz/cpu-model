@@ -131,15 +131,73 @@ wandb/
 *.pth
 *.pt
 *.bin
-*.safetensors
 *.onnx
 *.pkl
 *.pickle
+
+# Model files (keep safetensors for our trained models)
+# *.safetensors  # Commented out to keep our trained model files
+
+# Training outputs (keep our demo outputs)
+# demo_training_output/  # Commented out to keep our trained models
+# evaluation_results/    # Commented out to keep our evaluation results
+# conversations/         # Commented out to keep our conversation logs
+
+# Large model files (but keep our specific trained models)
+pytorch_model.bin
+model.safetensors
+# Keep our specific model files in demo_training_output/
+
+# Temporary training files
+training_state.pt
+optimizer.pt
+scheduler.pt
+rng_state.pth
 
 # Intel specific
 intel_extension_for_pytorch/
 vtune_data/
 profiling_results/
+
+# Cache and temporary files
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter notebook outputs
+*.ipynb_checkpoints/
+
+# Performance profiling
+*.prof
+*.profile
+
+# System and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.idea/
+
+# Environment and configuration
+.env
+.env.local
+.env.*.local
+config.local.json
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Temporary directories
+tmp/
+temp/
+.tmp/
 
 # IDE
 .vscode/
