@@ -203,6 +203,23 @@ temp/
 TODO.md
 PLAN.md
 
+# Organized project structure - keep our generated assets
+# models/demo_training_output/  # Keep our trained models
+# results/evaluation_results/   # Keep our evaluation results
+# data/conversations/           # Keep our conversation logs
+# config/*.json                 # Keep our configuration files
+
+# But ignore future model outputs in these directories
+models/*/pytorch_model.bin
+models/*/model.safetensors
+models/*/training_state.pt
+models/*/optimizer.pt
+models/*/scheduler.pt
+results/temp_*
+results/*.tmp
+data/cache/
+data/temp/
+
 # IDE
 .vscode/
 .idea/

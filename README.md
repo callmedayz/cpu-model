@@ -40,6 +40,32 @@ This is a **complete, production-ready AI model** with:
 
 ## 🚀 Quick Start
 
+### Main Interface
+
+The project now includes a unified main interface for all operations:
+
+```bash
+# Show all available commands
+python main.py --help
+
+# Start interactive chat system
+python main.py chat
+
+# Run training pipeline
+python main.py train
+
+# Run model evaluation
+python main.py evaluate
+
+# Run performance benchmarks
+python main.py benchmark
+
+# Run system tests
+python main.py test
+```
+
+### Alternative Methods
+
 ### 1. Installation
 
 ```bash
@@ -58,8 +84,10 @@ pip install -r requirements.txt
 ### 2. Run the Chat System
 
 ```bash
-# Start the interactive chat system
-python intel_chat_system.py
+# Start the interactive chat system (multiple options)
+python main.py chat                    # Using main interface
+python src/intel_chat_system.py       # Direct execution
+make chat                              # Using Makefile
 ```
 
 The chat system will:
@@ -74,16 +102,21 @@ Test the complete system:
 
 ```bash
 # Test Intel optimizations and model loading
-python intel_optimized_model.py
+python src/intel_optimized_model.py
 
 # Test memory optimization
-python intel_memory_optimizer.py
+python src/intel_memory_optimizer.py
 
 # Test data pipeline
-python intel_data_pipeline.py
+python src/intel_data_pipeline.py
 
 # Run comprehensive evaluation
-python intel_model_evaluator.py
+python src/intel_model_evaluator.py
+
+# Or use the main interface
+python main.py benchmark              # Run benchmarks
+python main.py evaluate               # Run evaluation
+python main.py test                   # Run tests
 ```
 
 ## 📊 Performance Results
@@ -162,27 +195,45 @@ python intel_model_evaluator.py
 
 ```
 cpu-model/
-├── ai_env/                          # Virtual environment
-├── intel_optimized_model.py         # Intel-optimized GPT-2 implementation
-├── intel_memory_optimizer.py        # Memory management and optimization
-├── intel_data_pipeline.py           # Efficient data loading pipeline
-├── intel_training_loop.py           # Complete training implementation
-├── intel_model_evaluator.py         # Comprehensive evaluation system
-├── intel_chat_system.py             # Production-ready chat interface
-├── demo_training_output/            # Trained model checkpoints
-│   ├── best_model/                  # Best performing model
-│   ├── checkpoint-0/                # Initial checkpoint
-│   ├── checkpoint-10/               # Mid-training checkpoint
-│   ├── checkpoint-20/               # Final checkpoint
-│   └── training_report.json         # Training performance report
-├── evaluation_results/              # Evaluation reports and metrics
-│   └── comprehensive_evaluation.json
-├── conversations/                   # Chat conversation logs
-├── test_intel_setup.py              # Setup verification script
-├── requirements.txt                 # Python dependencies
-├── PLAN.md                         # Detailed development plan
-├── TODO.md                         # Task breakdown (completed)
-├── DEVICE_SPECS.md                 # Hardware analysis
+├── src/                             # Source code modules
+│   ├── __init__.py                  # Package initialization
+│   ├── intel_optimized_model.py     # Intel-optimized GPT-2 implementation
+│   ├── intel_memory_optimizer.py    # Memory management and optimization
+│   ├── intel_data_pipeline.py       # Efficient data loading pipeline
+│   ├── intel_training_loop.py       # Complete training implementation
+│   ├── intel_model_evaluator.py     # Comprehensive evaluation system
+│   └── intel_chat_system.py         # Production-ready chat interface
+├── models/                          # Trained models and checkpoints
+│   └── demo_training_output/        # Our trained model
+│       ├── best_model/              # Best performing model
+│       ├── checkpoint-0/            # Initial checkpoint
+│       ├── checkpoint-10/           # Mid-training checkpoint
+│       ├── checkpoint-20/           # Final checkpoint
+│       └── training_report.json     # Training performance report
+├── results/                         # Evaluation results and reports
+│   └── evaluation_results/          # Our evaluation results
+│       └── comprehensive_evaluation.json
+├── data/                           # Data and datasets
+│   └── conversations/              # Chat conversation logs
+├── config/                         # Configuration files
+│   ├── data_pipeline_config.json   # Data pipeline settings
+│   ├── intel_memory_optimization.json # Memory optimization settings
+│   └── intel_model_performance.json # Performance configuration
+├── scripts/                        # Utility and setup scripts
+│   └── benchmark_intel_hardware.py # Hardware benchmarking
+├── tests/                          # Test files
+│   └── test_intel_setup.py         # Setup verification script
+├── docs/                           # Documentation
+│   ├── PLAN.md                     # Detailed development plan (local only)
+│   ├── TODO.md                     # Task breakdown (local only)
+│   ├── DEVICE_SPECS.md             # Hardware analysis
+│   └── benchmark_analysis.md       # Benchmark analysis
+├── ai_env/                         # Virtual environment
+├── main.py                         # Main entry point script
+├── setup.py                        # Package setup script
+├── pyproject.toml                  # Modern Python project configuration
+├── Makefile                        # Development task automation
+├── requirements.txt                # Python dependencies
 ├── .gitignore                      # Git ignore rules
 └── README.md                       # This file
 ```
@@ -226,7 +277,61 @@ Features:
 - Memory usage monitoring
 - Progress tracking and logging
 
-## 🔧 Technical Details
+## �️ Development
+
+### Using Makefile
+
+The project includes a Makefile for common development tasks:
+
+```bash
+# Show all available commands
+make help
+
+# Complete project setup
+make setup
+
+# Install package
+make install
+
+# Start chat system
+make chat
+
+# Run training
+make train
+
+# Run evaluation
+make evaluate
+
+# Run benchmarks
+make benchmark
+
+# Run tests
+make test
+
+# Code formatting and linting
+make format
+make lint
+
+# Clean temporary files
+make clean
+```
+
+### Package Installation
+
+Install as a Python package:
+
+```bash
+# Install in development mode
+pip install -e .
+
+# Install with development dependencies
+pip install -e .[dev]
+
+# Install with documentation dependencies
+pip install -e .[docs]
+```
+
+## �🔧 Technical Details
 
 ### Intel Optimizations
 - **Intel MKL**: Mathematical operations acceleration
