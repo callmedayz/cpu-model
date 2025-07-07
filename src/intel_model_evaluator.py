@@ -298,7 +298,7 @@ class IntelModelEvaluator:
         self,
         eval_dataloader: DataLoader,
         generation_prompts: List[str],
-        output_dir: str = "./evaluation_results"
+        output_dir: str = "./results/evaluation_results"
     ) -> Dict[str, Any]:
         """Run comprehensive model evaluation."""
         logger.info("Starting comprehensive model evaluation...")
@@ -377,7 +377,7 @@ def main():
     print("=" * 50)
     
     # Use the best model from training
-    model_path = "./demo_training_output/best_model"
+    model_path = "./models/demo_training_output/best_model"
     
     if not os.path.exists(model_path):
         print(f"Model not found at {model_path}")
@@ -414,7 +414,7 @@ def main():
     results = evaluator.comprehensive_evaluation(
         eval_dataloader=eval_dataloader,
         generation_prompts=generation_prompts,
-        output_dir="./evaluation_results"
+        output_dir="./results/evaluation_results"
     )
     
     # Print summary

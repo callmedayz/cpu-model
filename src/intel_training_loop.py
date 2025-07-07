@@ -524,7 +524,7 @@ def main():
         save_steps=10,
         eval_steps=10,
         logging_steps=2,
-        output_dir="./demo_training_output",
+        output_dir="./models/demo_training_output",
         enable_gradient_checkpointing=True,
         target_memory_gb=6.0
     )

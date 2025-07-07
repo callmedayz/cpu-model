@@ -412,7 +412,7 @@ def interactive_chat_demo():
     print("=" * 50)
     
     # Use the best model from training
-    model_path = "./demo_training_output/best_model"
+    model_path = "./models/demo_training_output/best_model"
     
     if not os.path.exists(model_path):
         print(f"Model not found at {model_path}")

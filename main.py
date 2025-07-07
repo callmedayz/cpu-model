@@ -51,22 +51,22 @@ Examples:
     
     try:
         if args.command == 'chat':
-            from intel_chat_system import main as chat_main
+            from src.intel_chat_system import interactive_chat_demo as chat_main
             print("🚀 Starting Intel-Optimized Chat System...")
             chat_main()
             
         elif args.command == 'train':
-            from intel_training_loop import main as train_main
+            from src.intel_training_loop import main as train_main
             print("🏋️ Starting Intel-Optimized Training...")
             train_main()
             
         elif args.command == 'evaluate':
-            from intel_model_evaluator import main as eval_main
+            from src.intel_model_evaluator import main as eval_main
             print("📊 Starting Model Evaluation...")
             eval_main()
             
         elif args.command == 'benchmark':
-            from intel_optimized_model import main as benchmark_main
+            from src.intel_optimized_model import main as benchmark_main
             print("⚡ Running Performance Benchmarks...")
             benchmark_main()
             

@@ -1,0 +1,25 @@
+{
+  "session_id": "434fb11a-bb2d-41f5-b917-70920f3bf1f0",
+  "created_at": "2025-07-07T08:52:49.430115",
+  "last_activity": "2025-07-07T08:52:51.093940",
+  "messages": [
+    {
+      "id": "c216e9c6-e0ba-4d37-85ce-1fa26a8f49dc",
+      "role": "user",
+      "content": "Hello, how are you today?",
+      "timestamp": "2025-07-07T08:52:49.430115",
+      "generation_time": null,
+      "tokens_per_second": null
+    },
+    {
+      "id": "f96f7e72-990e-4af6-9e61-2965126c1786",
+      "role": "assistant",
+      "content": "You're an Assistant! This is all right. We'll get back to it later on in the afternoon and I'm sure we can talk about your new job soon as well...",
+      "timestamp": "2025-07-07T08:52:51.093940",
+      "generation_time": 1.6638247966766357,
+      "tokens_per_second": 21.636893543062513
+    }
+  ],
+  "total_tokens": 36,
+  "total_generation_time": 1.6638247966766357
+}
