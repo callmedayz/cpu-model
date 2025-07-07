@@ -1,0 +1,35 @@
+# Core ML/AI Dependencies
+torch==2.7.1+cpu
+torchvision==0.22.1+cpu
+torchaudio==2.7.1+cpu
+transformers==4.53.1
+datasets==3.6.0
+tokenizers==0.21.2
+huggingface-hub==0.33.2
+safetensors==0.5.3
+
+# Scientific Computing
+numpy==2.3.1
+pandas==2.3.0
+matplotlib==3.10.3
+seaborn==0.13.2
+
+# Jupyter Environment
+jupyter==1.1.1
+notebook==7.4.4
+jupyterlab==4.4.4
+ipykernel==6.29.5
+ipywidgets==8.1.7
+
+# Monitoring and Logging
+tensorboard==2.19.0
+tqdm==4.67.1
+
+# System Utilities
+psutil==7.0.0
+pyyaml==6.0.2
+requests==2.32.4
+
+# Development Tools
+pillow==11.3.0
+regex==2024.11.6
