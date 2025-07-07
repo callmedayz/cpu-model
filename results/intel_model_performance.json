@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-07-07T08:43:52.161246",
+  "timestamp": "2025-07-07T08:58:09.934378",
   "model_info": {
     "model_name": "gpt2",
     "device": "cpu",
@@ -16,25 +16,25 @@
       }
     },
     "performance_stats": {
-      "load_time": 0.7189152240753174,
-      "avg_inference_time": 2.5823352336883545,
+      "load_time": 0.6581392288208008,
+      "avg_inference_time": 0.5211987495422363,
       "total_inferences": 1,
-      "avg_memory_usage_mb": 363.02734375
+      "avg_memory_usage_mb": 448.00390625
     }
   },
   "system_info": {
     "cpu_count": 8,
     "memory_total_gb": 15.74881362915039,
-    "memory_available_gb": 5.584682464599609,
+    "memory_available_gb": 5.742198944091797,
     "pytorch_version": "2.7.1+cpu"
   },
   "performance_stats": {
-    "load_time": 0.7189152240753174,
+    "load_time": 0.6581392288208008,
     "inference_times": [
-      2.5823352336883545
+      0.5211987495422363
     ],
     "memory_usage": [
-      363.02734375
+      448.00390625
     ],
     "optimization_applied": {
       "ipex_optimize": false,

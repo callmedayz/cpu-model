@@ -296,8 +296,11 @@ def benchmark_threading_performance():
     
     return results
 
-def save_benchmark_results(results, filename="benchmark_results.json"):
+def save_benchmark_results(results, filename="./results/benchmark_results.json"):
     """Save benchmark results to JSON file."""
+    # Ensure results directory exists
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+
     results['timestamp'] = datetime.now().isoformat()
     results['system_info'] = {
         'cpu_count': psutil.cpu_count(),
@@ -306,10 +309,10 @@ def save_benchmark_results(results, filename="benchmark_results.json"):
         'torch_threads': torch.get_num_threads(),
         'torch_interop_threads': torch.get_num_interop_threads()
     }
-    
+
     with open(filename, 'w') as f:
         json.dump(results, f, indent=2, default=str)
-    
+
     print(f"\n📊 Results saved to {filename}")
 
 def main():

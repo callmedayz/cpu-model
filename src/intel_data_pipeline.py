@@ -379,8 +379,11 @@ class IntelDataPipeline:
         
         return results
     
-    def save_pipeline_config(self, filename: str = "data_pipeline_config.json"):
+    def save_pipeline_config(self, filename: str = "./results/data_pipeline_config.json"):
         """Save pipeline configuration and performance stats."""
+        # Ensure results directory exists
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
         config = {
             'tokenizer_name': self.tokenizer_name,
             'max_length': self.max_length,
@@ -392,10 +395,10 @@ class IntelDataPipeline:
                 'avg_loading_time': sum(self.loading_times) / len(self.loading_times) if self.loading_times else 0
             }
         }
-        
+
         with open(filename, 'w') as f:
             json.dump(config, f, indent=2)
-        
+
         logger.info(f"Pipeline configuration saved to {filename}")
         return filename
 

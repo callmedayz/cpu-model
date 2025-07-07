@@ -11,6 +11,7 @@ import psutil
 import gc
 import time
 import json
+import os
 from typing import Dict, Tuple, Any
 from transformers import GPT2LMHeadModel, GPT2Config
 import logging
@@ -334,8 +335,11 @@ class IntelMemoryOptimizer:
         
         return recommendations
     
-    def save_optimization_report(self, filename: str = "intel_memory_optimization.json"):
+    def save_optimization_report(self, filename: str = "./results/intel_memory_optimization.json"):
         """Save comprehensive optimization report."""
+        # Ensure results directory exists
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
         report = {
             'timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
             'target_memory_gb': self.target_memory_gb,
@@ -344,10 +348,10 @@ class IntelMemoryOptimizer:
             'recommendations': self.get_memory_recommendations(),
             'performance_history': self.performance_history
         }
-        
+
         with open(filename, 'w') as f:
             json.dump(report, f, indent=2, default=str)
-        
+
         logger.info(f"Optimization report saved to {filename}")
         return filename
 

@@ -404,8 +404,11 @@ class IntelOptimizedGPT2:
             }
         }
     
-    def save_performance_report(self, filename: str = "intel_model_performance.json"):
+    def save_performance_report(self, filename: str = "./results/intel_model_performance.json"):
         """Save comprehensive performance report."""
+        # Ensure results directory exists
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
         report = {
             'timestamp': datetime.now().isoformat(),
             'model_info': self.get_model_info(),
@@ -417,10 +420,10 @@ class IntelOptimizedGPT2:
             },
             'performance_stats': self.performance_stats
         }
-        
+
         with open(filename, 'w') as f:
             json.dump(report, f, indent=2, default=str)
-        
+
         logger.info(f"Performance report saved to {filename}")
         return filename
 
