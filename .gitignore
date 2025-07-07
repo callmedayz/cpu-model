@@ -199,6 +199,10 @@ tmp/
 temp/
 .tmp/
 
+# Development planning files (keep local, not in repo)
+TODO.md
+PLAN.md
+
 # IDE
 .vscode/
 .idea/
